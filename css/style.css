@@ -99,6 +99,10 @@ main {
     
 }
 
+.info-tag {
+    padding-top: 3px;
+}
+
 .heart {
     position: absolute;
     font-size: 30px;
