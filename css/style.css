@@ -90,9 +90,21 @@ main {
 .photo-container {
     width: calc(450px - 20px);
     border: 1px solid black;
+    position: relative;
 }
 
 .photo-container img {
     max-width: 100%;
     display:block;
+    
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    right: 0;
+    padding: 15px;
+    background-color: white;
+    
 }
