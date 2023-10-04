@@ -67,7 +67,10 @@ main {
 
 .photo-container {
     width: calc(450px - 20px);
-    height: 650px;
     border: 1px solid black;
-    padding: 20px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    display:block;
 }
