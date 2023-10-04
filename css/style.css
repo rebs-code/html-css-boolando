@@ -36,6 +36,27 @@ footer {
     color: red;
 }
 
+.photo-container {
+    position: relative;
+    width: calc(1370px / 3 - 20px);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease, z-index 0s 0.3s; 
+    z-index: -1;
+}
+
+.photo-container:hover .overlay {
+    opacity: 1;
+    z-index: 1;
+}
+
 
 
 
@@ -125,12 +146,15 @@ main {
 
 .info-tag {
     padding-top: 3px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
 }
 
 .heart {
     position: absolute;
     font-size: 30px;
-    top: 10px;
+    bottom: 620px;
     right: 0;
     padding: 10px 15px;
     background-color: white;
